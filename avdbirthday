@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+  <title> 🎉 Avanda's 27th Birthday! 🥳 </title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Ubuntu";
+      color: rgb(56, 56, 56);
+    }
+
+    body {
+      background: white;
+      /* background-image: url("https://wallpaper.dog/large/10871886.png"); */
+      background-image: linear-gradient(#ffffff, #b983ff, #af5fd3, #301934);
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      overflow: hidden;
+    }
+
+    .open {
+      background-image: linear-gradient(#ffffff, #b983ff);
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      z-index: 1;
+      transition: 0.5s all ease;
+    }
+
+    .open h2 {
+      /* margin: 0 30px; */
+      margin-bottom: 20px;
+      color: rgb(56, 56, 56);
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .open .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+      text-align: center;
+    }
+
+    .open .card h3 {
+      margin-top: 20px;
+    }
+
+    .open .card img {
+      height: 150px;
+    }
+
+    .atas {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .atas img {
+      height: 350px;
+      margin-bottom: 20px;
+      padding: 10px 10px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+    .atas h2 {
+      animation: kenyal 2.75s ease infinite;
+      text-align: center;
+      font-size: 1.5em;
+      color: #ffffff;
+      padding: 10px 20px;
+      margin: 20px 20px;
+      background-color: #6E5E8E;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+    p {
+      display: block animation: kenyal 2s ease infinite;
+      text-align: center;
+      color: rgb(56, 56, 56);
+      background: white;
+      cursor: pointer font-weight: bold;
+      font-size: 1.5em;
+      padding: 50px 30px;
+      margin: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+    p.wm {
+      width: fit-content;
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding: 10px 20px;
+      border-radius: 10px 10px 0 0;
+      font-weight: 500;
+      font-size: .9em;
+      color: red;
+    }
+
+    p.wm a {
+      color: red;
+      text-decoration: none;
+    }
+
+    .material-icons-sharp {
+      color: red;
+      font-size: 30px;
+      transform: translateY(5px);
+      animation: kenyal 2s ease infinite;
+      cursor: pointer;
+    }
+
+    y {
+      display: block;
+      text-align: center;
+      color: rgb(56, 56, 56);
+      background: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 20px 30px;
+      margin: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+    x {
+      display: block;
+      text-align: center;
+      color: #825C77;
+      background-color: #FFF5EE;
+      font-weight: 500;
+      font-size: 1.2em;
+      padding: 50px 20px;
+      margin: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+
+    z {
+      display: block;
+      text-align: center;
+      color: #825C77;
+      background-color: #FFF5EE;
+      font-weight: 500;
+      font-size: 0.9em;
+      padding: 40px 20px;
+      margin: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+
+    m {
+      display: block;
+      text-align: center;
+      color: #825C77;
+      background-color: #FFF5EE;
+      font-weight: 500;
+      font-size: 0.9em;
+      padding: 20px 10px;
+      margin: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+    }
+
+
+    .accordion {
+      display: block;
+      text-align: center;
+      background-color: white;
+      color: rgb(56, 56, 56);
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 50px 30px;
+      margin: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+      transition: 0.4s;
+    }
+
+
+
+    .active,
+    .accordion:hover {
+      background-color: whitesmoke;
+    }
+
+    .panel {
+      padding: 0 12px;
+      background-color: rgba(0, 0, 0, 0);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+
+    .center {
+      background-color: #FFF5EE;
+      display: block;
+      padding: 20px 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+
+    @keyframes kenyal {
+      0% {
+        transform: scale(1) translateY(4px);
+      }
+
+      50% {
+        transform: scale(1.1) translateY(4px);
+      }
+
+      100% {
+        transform: scale(1) translateY(4px);
+      }
+    }
+  </style>
+</head>
+
+<body class="body">
+  <audio class="audio"
+    src="https://github.com/deft47/birthday/raw/main/y2mate.com%20-%20Happy%20Birthday%20To%20You%20dari%20Audisi%20Anak%20Biskuat_320kbps.mp3"
+    autoplay type="audio" loop=""></audio>
+  <div class="open">
+    <div class="card">
+      <h2>Wazzup Triddd 😎 </h2>
+      <img onclick="mulai()" src="https://github.com/deft47/birthday/raw/main/giphy1.gif" alt="" srcset="" ,
+        width=215px />
+      <h3>TODAY'S THE F*CKIN DAY! 😈</h3>
+    </div>
+  </div>
+  <div class="atas" id="atas">
+    <img onclick="mulai()" src="https://github.com/deft47/birthday/raw/main/AVD%20HBD%20(3).png" alt="" />
+    <h2>🎉 Avanda's 27th Birthday! 🥳</h2>
+  </div>
+
+  <y data-aos="zoom-in-down">★ My Wishes 4 U ★</y>
+
+  <x data-aos="zoom-in-down">Happy 27th Birthday ya triddd!! 💜💜 Semoga kamu sehat selalu, panjang umur, sukses, murah
+    rezeki, tambah cantik, tambah pinter, tambah cool, dan
+    bisa dikabulkan semua keinginan kamu dan cita-cita kamu. Intinya di umur 27 tahun ini, aku yakin kamu pasti bisa
+    menjadi
+    diri yang lebih baik lagi dan tahun ini bisa lebih baik dari tahun-tahun yang sebelumnya. Tetep menjadi Astrid yang
+    aku kenal yaa! Astrid yang
+    baik hati, rajin menabung, jujur, ulet, cekatan, dan tidak sombong yahh pokonya!! 💜💜 Aku sayangg bgtbgt kamu tridd
+    selalu!! 😽 Ohiya satu lagi..semoga di
+    umur yang semakin dewasa ini, kita beneran bisa selangkah lebih dekat untuk mewujudkan niat kita membangun keluarga
+    yaa trid..Aamiin ya Allah..semangatt untuk kita okayy! 😎😍
+  </x>
+
+  <p data-aos="zoom-in" class="accordion"> 🙏 My Apologise 😭 </p>
+  <div class="panel">
+    <x>Tridd maafin yaa tahun 2023 ini aku cuma bawa kado dan makanan kaya gini doang :( aku pengen bawa lebih, tapi aku
+      udah janji sama kamu :( tp tenang ajaa! uangnya aku tabung kokk ini, demi masa depan dan cita-cita kita hehehe!!
+      😘💜 </x>
+  </div>
+
+
+  <p data-aos="zoom-in" href=""
+    onclick="window.open('https://raw.githubusercontent.com/deft47/birthday/main/AVD%20HBD.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">
+    <b>Download Ur Pic Above - LOL</b>
+  </p>
+
+
+  <p data-aos="zoom-in" class="accordion"> <b>I Love U So Much Trid! </b> <i class="material-icons-sharp"> favorite </i>
+    <sub> heheheh jangan sebel y </sub>
+  </p>
+  <div class="panel">
+    <img class="center" src="https://raw.githubusercontent.com/deft47/birthday/main/kawakawa.PNG" alt="">
+  </div>
+
+
+
+
+
+  <m data-aos="zoom-in"> Proudly made by myself - © DAP Est. 2023 Cipinang Crew </m>
+
+
+
+
+  <script>
+
+    var musik = "";
+
+  </script>
+  <script> AOS.init({once: true, });</script>
+  <script> var audio = document.querySelector(".audio"); if (musik) {audio.src = musik;} function mulai() {audio.play(); document.querySelector(".open").style = "opacity: 0;"; document.querySelector(".body").style = "overflow-y: scroll;"; setTimeout(function () {document.querySelector(".open").style.display = "none";}, 1000);} function wa(isi) {window.open("https://api.whatsapp.com/send?text= Makasih ya udah inget ulang tahun aku, di hari spesial ini aku pengin " + isi);} async function tanya() {var {value: kado} = await swal.fire({title: "Di hari spesial ini kamu pengin nya apa?", input: "text", showCancelButton: false, }); if (kado) {await swal.fire("Kirim jawabannya ke wa aku ya"); wa(kado);} else {await swal.fire("Jangan dikosongin dong"); tanya();} }
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+
+
+  </script>
+</body>
+
+</html>
